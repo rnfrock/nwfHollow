@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>H O L L O W</title>
+<title>h o L L o w</title>
+<link rel="icon" href="icon.ico">
 <link rel="stylesheet" type="text/css" href="myStyle.css">
 <script type="text/javascript" src="processing.js"></script>
+<script>
+	function func() {
+		alert('Submit was clicked');
+	}
+</script>
 </head>
 <body>
 	<div id="containerMain">
@@ -18,7 +24,7 @@
 		<div id="footer">
 			<p>Please leave a word expressing your thoughts and feelings about the piece.<br/> (Refresh the page without submitting to start over)</p> 
 			<span id="btn">
-				<button type="submit">Submit</button>
+				<button type="submit" onClick="func()">Submit</button>
 			</span>
 		</div>
 	</div>
