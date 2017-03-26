@@ -18,7 +18,7 @@ void draw() {
 }
 
 // Click to clear the PGraphics object
-void keyPressed() {
+/*void keyPressed() {
   if( key =='c' || key == 'C' ) {
     background(0);
     pg.beginDraw(); 
@@ -26,4 +26,4 @@ void keyPressed() {
     pg.endDraw(); 
     print(key);
   }
-}
+}*/
