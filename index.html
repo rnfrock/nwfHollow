@@ -10,6 +10,24 @@
 		alert('Submit was clicked');
 	}
 </script>
+<script>
+	function test(){
+	var canvas  = document.getElementById("input");
+	var dataURL = canvas.toDataURL();
+
+	$.ajax({
+	  type: "POST",
+	  url: "upload.php",
+	  data: { 
+	     img: dataURL
+	  }
+	}).done(function(o) {
+	  console.log('saved'); 
+
+	});
+
+	}
+</script>
 </head>
 <body>
 	<div id="containerMain">
@@ -19,7 +37,7 @@
 		<div>
 			<!--<canvas id="myCanvas" width="740" height="300" style="border:1px solid #000000;">
 			</canvas>-->
-			<canvas data-processing-sources="userInput.pde"></canvas>
+			<canvas id="input" data-processing-sources="userInput.pde"></canvas>
 		</div>
 		<div id="footer">
 			<p>Please leave a word expressing your thoughts and feelings about the piece.<br/> (Refresh the page without submitting to start over)</p> 
